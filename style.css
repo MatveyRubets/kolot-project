@@ -1,0 +1,276 @@
+/* Global styles */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	color: #000000;
+}
+
+body {
+	font-family: "Raleway";
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.container {
+	padding: 0 102px;
+}
+
+/* Header */
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 0;
+	border-bottom: 2px solid #000000;
+}
+
+.header__search {
+	border-style: hidden;
+	border-bottom: 2px solid #d9d9d9;
+	font-family: "Roboto";
+	font-weight: 300;
+	font-size: 20px;
+	font-style: normal;
+	line-height: 23px;
+}
+
+.header__search::placeholder {
+	color: black;
+}
+
+.header__search:focus {
+	outline: none;
+}
+
+/* Navigation */
+
+.navbar {
+	display: flex;
+	justify-content: space-evenly;
+	border-bottom: 2px solid #d9d9d9;
+}
+
+.mainnav {
+	padding-top: 33px;
+	padding-bottom: 33px;
+}
+
+.navbar__link {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+@media screen and (max-width: 1200px) {
+	.navbar__link {
+		font-size: 20px;
+		line-height: 22px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.navbar {
+		display: none;
+	}
+}
+
+/* Main (news) section */
+
+.news {
+	padding-top: 33px;
+	padding-bottom: 83px;
+}
+
+.wrapper {
+	gap: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+	.wrapper {
+		display: flex;
+	}
+
+	.wrapper .newsleft,
+	.wrapper .newsright {
+		width: 50%;
+	}
+}
+
+/* Leftside news section */
+
+.newsleft__img {
+	margin-bottom: 35px;
+	width: 100%;
+	object-fit: contain;
+}
+.newsleft__heading {
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 38px;
+	padding-bottom: 24px;
+	border-bottom: 2px solid #d9d9d9;
+}
+.newsleft__post {
+	padding: 24px 0;
+	border-bottom: 2px solid #d9d9d9;
+}
+.newsleft__post-link {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.newsleft__post-paragraph {
+	margin-top: 23px;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 23px;
+}
+
+/* Rightside news section */
+/* Deep leftside */
+
+.deepnewsleft__heading {
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 47px;
+	margin: 44px 0;
+}
+/* Cards */
+
+.deepnewsleft__cards {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 44px;
+}
+.deepnewsleft__card {
+	background: #d9d9d9;
+	max-width: 318px;
+}
+.deepnewsleft__card-content {
+	padding: 20px 50px 46px;
+}
+.deepnewsleft__card-heading {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 28px;
+}
+.deepnewsleft__card-desc {
+	font-family: "Roboto";
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+@media screen and (max-width: 1200px) {
+	.deepnewsleft__cards {
+		margin: 44px 0;
+		flex-wrap: wrap;
+		flex-direction: initial;
+	}
+}
+
+/* Adverts */
+
+.deepnewsleft__adverts {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 44px;
+}
+.deepnewsleft__advert {
+	max-width: 318px;
+	background: #d9d9d9;
+}
+
+.deepnewsleft__advert-content {
+	padding: 32px;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 23px;
+}
+
+@media screen and (max-width: 1200px) {
+	.deepnewsleft__adverts {
+		margin: 44px 0;
+		gap: 44px;
+		flex-wrap: wrap;
+		flex-direction: initial;
+	}
+}
+
+/* Deep rightside */
+
+.deepnewsright__posts {
+}
+.deepnewsright__post {
+	padding-top: 18px;
+	padding-bottom: 18px;
+	border-bottom: 2px solid #d9d9d9;
+}
+
+.deepnewsright__post:first-child {
+	padding-top: 0;
+}
+.deepnewsright__post-link {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 23px;
+}
+.deepnewsright__post-paragraph {
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 18px;
+	padding-top: 23px;
+	padding-bottom: 18px;
+}
+.deepnewsright__post-date {
+	font-family: "Roboto";
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 23px;
+	margin-top: 18px;
+}
+
+/* Footer */
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 74px;
+	padding-bottom: 74px;
+	border-top: 2px solid #000000;
+}
+
+.footernav {
+	border: 0;
+	gap: 55px;
+}
+
+@media screen and (max-width: 768px) {
+	.footer {
+		flex-direction: column;
+		align-items: baseline;
+
+		padding: 90px;
+	}
+
+	.footernav {
+		margin-top: 37px;
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+}
