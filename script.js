@@ -1,3 +1,5 @@
+// To append the article
+
 const article = document.querySelector("#newsleft__article");
 
 const loadSection = page => {
@@ -5,6 +7,8 @@ const loadSection = page => {
 		.then(res => res.ok && res.text())
 		.then(section => (article.innerHTML = section));
 };
+
+// Responsive layout (Burger menu & Searchbox)
 
 const searchIcon = document.querySelector(".header__search-icon");
 const closeIcon = document.querySelector(".header__search-close");
