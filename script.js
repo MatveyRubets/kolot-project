@@ -11,8 +11,8 @@ const closeIcon = document.querySelector(".header__search-close");
 const searchBox = document.querySelector(".header__searchbox");
 const burgerBtn = document.querySelector(".header__burger");
 const navigation = document.querySelector(".navbar");
-const header = document.querySelector(".header");
 const nav = document.querySelector("nav");
+const body = document.querySelector("body");
 
 searchIcon.addEventListener("click", () => {
 	searchBox.classList.add("active");
@@ -31,4 +31,5 @@ closeIcon.addEventListener("click", () => {
 burgerBtn.addEventListener("click", () => {
 	console.log("hi");
 	nav.classList.toggle("open");
+	body.classList.toggle("lightgray");
 });

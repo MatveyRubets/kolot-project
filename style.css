@@ -24,6 +24,10 @@ a:hover {
 	padding: 0 102px;
 }
 
+.lightgray {
+	background: lightgray;
+}
+
 @media screen and (max-width: 768px) {
 	.container {
 		padding: 0 33px;
@@ -40,6 +44,7 @@ a:hover {
 	border: 0;
 	border-bottom: 2px solid #000000;
 }
+
 .header__search {
 	position: relative;
 	z-index: 10;
@@ -108,8 +113,17 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
+	.header__logo {
+		width: 175px;
+	}
+
 	.header__search-icon {
+		width: 20px;
 		left: 0;
+	}
+
+	.header__search-close {
+		width: 20px;
 	}
 
 	.header__burger.hide {
@@ -117,6 +131,7 @@ a:hover {
 	}
 
 	.header__burger {
+		width: 20px;
 		position: absolute;
 		display: block;
 		cursor: pointer;
@@ -176,6 +191,11 @@ a:hover {
 		opacity: 0;
 		visibility: hidden;
 		border: 0;
+	}
+
+	.navbar__link {
+		font-size: 16px;
+		line-height: 20px;
 	}
 }
 
