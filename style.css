@@ -108,23 +108,20 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
-	.header.open .navbar {
-		opacity: 1;
-		visibility: visible;
-		display: flex;
-		flex-direction: column;
+	.header__search-icon {
 		left: 0;
 	}
 
-	.header__search-icon {
-		left: 0;
+	.header__burger.hide {
+		display: none;
 	}
 
 	.header__burger {
 		position: absolute;
 		display: block;
 		cursor: pointer;
-		right: 33px;
+		right: 28px;
+		top: 34px;
 		z-index: 10;
 	}
 }
@@ -156,13 +153,28 @@ a:hover {
 		font-size: 20px;
 		line-height: 23px;
 	}
+
+	.navbar {
+		gap: 35px;
+	}
 }
 @media screen and (max-width: 768px) {
+	.open .navbar {
+		opacity: 1;
+		visibility: visible;
+		overflow: hidden;
+	}
+
 	.navbar {
+		right: 0;
+		background: #fff;
+		display: flex;
+		flex-direction: column;
+		height: 50%;
+		width: 50%;
 		position: absolute;
 		opacity: 0;
 		visibility: hidden;
-		left: 100%;
 		border: 0;
 	}
 }

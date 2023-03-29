@@ -12,19 +12,23 @@ const searchBox = document.querySelector(".header__searchbox");
 const burgerBtn = document.querySelector(".header__burger");
 const navigation = document.querySelector(".navbar");
 const header = document.querySelector(".header");
+const nav = document.querySelector("nav");
 
 searchIcon.addEventListener("click", () => {
 	searchBox.classList.add("active");
 	searchIcon.classList.add("active");
 	closeIcon.classList.add("active");
+	burgerBtn.classList.add("hide");
 });
 
 closeIcon.addEventListener("click", () => {
 	searchBox.classList.remove("active");
 	searchIcon.classList.remove("active");
 	closeIcon.classList.remove("active");
+	burgerBtn.classList.remove("hide");
 });
 
 burgerBtn.addEventListener("click", () => {
-	header.classList.add("open");
+	console.log("hi");
+	nav.classList.toggle("open");
 });
