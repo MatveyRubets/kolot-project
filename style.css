@@ -34,6 +34,12 @@ a:hover {
 	}
 }
 
+@media screen and (min-width: 1081px) {
+	.container {
+		padding: 0 200px;
+	}
+}
+
 /* Header */
 
 .header {
@@ -489,6 +495,12 @@ a:hover {
 .footernav {
 	border: 0;
 	gap: 55px;
+}
+
+@media screen and (max-width: 1080px) {
+	.footer__logo {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 768px) {
