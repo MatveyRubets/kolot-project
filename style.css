@@ -40,20 +40,31 @@ a:hover {
 	}
 }
 
+.sticky {
+	position: fixed;
+	top: 0;
+	background: #fff;
+	width: 100%;
+}
+
 /* Header */
 
 .header {
-	position: relative;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	border: 0;
 	border-bottom: 2px solid #000000;
 }
 
 .header__logo {
+	display: flex;
 	width: 263px;
 	height: 98px;
+}
+
+.header__logo-mobile {
+	display: none;
 }
 
 .header__search {
@@ -130,8 +141,20 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
+	.header {
+		justify-content: space-between;
+	}
 	.header__logo {
+		align-items: center;
 		width: 175px;
+	}
+
+	.header__logo-desktop {
+		display: none;
+	}
+
+	.header__logo-mobile {
+		display: block;
 	}
 
 	.header__search-icon {
@@ -148,12 +171,12 @@ a:hover {
 	}
 
 	.header__burger {
-		width: 20px;
+		width: 30px;
 		position: absolute;
 		display: block;
 		cursor: pointer;
-		right: 30px;
-		top: 39px;
+		right: 35px;
+		top: 35px;
 		z-index: 10;
 	}
 }
@@ -161,6 +184,7 @@ a:hover {
 /* Navigation */
 
 .navbar {
+	position: fixed;
 	display: flex;
 	justify-content: space-evenly;
 }
@@ -218,7 +242,7 @@ a:hover {
 /* Main (news) section */
 
 .news {
-	padding-top: 33px;
+	padding-top: 224px;
 	padding-bottom: 83px;
 }
 
@@ -268,6 +292,9 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
+	.news {
+		padding-top: 131px;
+	}
 	.newsleft__heading,
 	.newsleft__post-link {
 		font-weight: 500;

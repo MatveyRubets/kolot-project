@@ -10,27 +10,27 @@ const loadSection = page => {
 
 // Responsive layout (Burger menu & Searchbox)
 
-const searchIcon = document.querySelector(".header__search-icon");
-const closeIcon = document.querySelector(".header__search-close");
-const searchBox = document.querySelector(".header__searchbox");
+// const searchIcon = document.querySelector(".header__search-icon");
+// const closeIcon = document.querySelector(".header__search-close");
+// const searchBox = document.querySelector(".header__searchbox");
 const burgerBtn = document.querySelector(".header__burger");
 const navigation = document.querySelector(".navbar");
 const mainNav = document.querySelector(".mainnav");
 const body = document.querySelector("body");
 
-searchIcon.addEventListener("click", () => {
-	searchBox.classList.add("active");
-	searchIcon.classList.add("active");
-	closeIcon.classList.add("active");
-	burgerBtn.classList.add("hide");
-});
+// searchIcon.addEventListener("click", () => {
+// 	searchBox.classList.add("active");
+// 	searchIcon.classList.add("active");
+// 	closeIcon.classList.add("active");
+// 	burgerBtn.classList.add("hide");
+// });
 
-closeIcon.addEventListener("click", () => {
-	searchBox.classList.remove("active");
-	searchIcon.classList.remove("active");
-	closeIcon.classList.remove("active");
-	burgerBtn.classList.remove("hide");
-});
+// closeIcon.addEventListener("click", () => {
+// 	searchBox.classList.remove("active");
+// 	searchIcon.classList.remove("active");
+// 	closeIcon.classList.remove("active");
+// 	burgerBtn.classList.remove("hide");
+// });
 
 burgerBtn.addEventListener("click", () => {
 	console.log("hi");
