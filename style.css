@@ -184,9 +184,10 @@ a:hover {
 /* Navigation */
 
 .navbar {
-	position: fixed;
+	position: relative;
 	display: flex;
 	justify-content: space-evenly;
+	gap: 35px;
 }
 
 .mainnav__list {
@@ -202,15 +203,12 @@ a:hover {
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 23px;
+	margin-right: 15px;
 }
 
 @media screen and (max-width: 1200px) {
 	.navbar__link {
 		font-weight: 500;
-	}
-
-	.navbar {
-		gap: 35px;
 	}
 }
 @media screen and (max-width: 768px) {
@@ -389,13 +387,17 @@ a:hover {
 	flex-direction: column;
 	justify-content: center;
 	gap: 44px;
+	min-width: 250px;
 }
 .deepnewsleft__card {
 	background: #d9d9d9;
-	max-width: 318px;
+}
+
+.deepnewsleft__card-img {
+	width: 100%;
 }
 .deepnewsleft__card-content {
-	padding: 20px 50px 46px;
+	padding: 15px 40px 33px;
 }
 .deepnewsleft__card-heading {
 	font-weight: 400;
@@ -444,6 +446,10 @@ a:hover {
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 23px;
+}
+
+.deepnewsleft__advert-img {
+	width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
