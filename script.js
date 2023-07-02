@@ -33,7 +33,50 @@ const body = document.querySelector("body");
 // });
 
 burgerBtn.addEventListener("click", () => {
-	console.log("hi");
 	mainNav.classList.toggle("open");
 	body.classList.toggle("lightgray");
+});
+
+const app = document.querySelector("#app");
+
+const locationResolver = location => {
+	const template = document.createElement("div");
+
+	template.innerHTML = `
+	<h1>${location}</h1>
+
+	<p>Главная страница</p>
+`;
+
+	switch (location) {
+		case "#/publications/":
+			app.innerHTML = `
+                <h1>${location}</h1>
+
+                <p>Страница publications</p>
+            `;
+			break;
+		case "#/dossier/":
+			app.innerHTML = `
+                <h1>${location}</h1>
+
+                <p>Страница dossier</p>
+            `;
+			break;
+		case "#/contacts/":
+			app.innerHTML = `
+                <h1>${location}</h1>
+
+                <p>Страница contacts</p>
+            `;
+			break;
+	}
+};
+
+window.addEventListener("load", () => {
+	const location = window.location.hash;
+
+	if (location) {
+		locationResolver(location);
+	}
 });
