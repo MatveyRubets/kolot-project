@@ -45,6 +45,7 @@ a:hover {
 	top: 0;
 	background: #fff;
 	width: 100%;
+	z-index: 500;
 }
 
 /* Header */
@@ -143,19 +144,20 @@ a:hover {
 @media screen and (max-width: 768px) {
 	.header {
 		justify-content: space-between;
+		height: 80px;
 	}
 	.header__logo {
 		align-items: center;
 		width: 175px;
 	}
 
-	.header__logo-desktop {
+	/* .header__logo-desktop {
 		display: none;
 	}
 
 	.header__logo-mobile {
 		display: block;
-	}
+	} */
 
 	.header__search-icon {
 		width: 20px;
@@ -176,7 +178,7 @@ a:hover {
 		display: block;
 		cursor: pointer;
 		right: 35px;
-		top: 35px;
+		top: 25px;
 		z-index: 10;
 	}
 }
@@ -219,10 +221,10 @@ a:hover {
 
 	.mainnav__list {
 		right: 0;
-		background: #fff;
+		padding: 40px 25px;
+		background: #ffffff;
 		display: flex;
 		flex-direction: column;
-		height: 50%;
 		width: 50%;
 		position: absolute;
 		opacity: 0;
@@ -290,7 +292,7 @@ a:hover {
 
 @media screen and (max-width: 768px) {
 	.news {
-		padding-top: 131px;
+		padding-top: 100px;
 	}
 	.newsleft__heading,
 	.newsleft__post-link {
@@ -390,10 +392,17 @@ a:hover {
 }
 .deepnewsleft__card {
 	background: #d9d9d9;
+	position: relative;
 }
 
 .deepnewsleft__card-img {
 	width: 100%;
+}
+
+.deepnewsleft__card-svg {
+	position: absolute;
+	bottom: 115px;
+	left: 15px;
 }
 .deepnewsleft__card-content {
 	padding: 15px 20px 18px;

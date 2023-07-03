@@ -37,6 +37,8 @@ burgerBtn.addEventListener("click", () => {
 	body.classList.toggle("lightgray");
 });
 
+// Routing
+
 const app = document.querySelector("#app");
 
 const locationResolver = location => {
